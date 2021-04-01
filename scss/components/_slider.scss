@@ -1,0 +1,34 @@
+.slider {
+    &__item {
+        height: 50rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    &--banner &__item {
+        height: 70rem;
+    }
+}
+
+.slick-dots {
+    margin-top: 2rem;
+    bottom: -40px;
+
+    li {
+        button {
+            height: 2rem;
+            width: 2rem;
+            background-color: var(--bs-secondary);
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &.slick-active {
+            button {
+                background-color: var(--color-theme);
+            }
+        }
+    }
+}

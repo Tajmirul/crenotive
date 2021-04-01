@@ -1,0 +1,43 @@
+.box-layout {
+    text-align: center;
+}
+
+.box {
+    display: inline-block;
+    min-width: 16rem;
+    text-align: center;
+    margin: 2rem 1rem 0 1rem;
+
+    &__inner {
+        padding: 2rem;
+        background-color: #e6e6e6;
+        border-radius: 1rem;
+        transition: .3s;
+    }
+
+    &__icon {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        color: var(--color-theme);
+    }
+    &__number {
+        font-size: 3rem;
+        margin-bottom: 0;
+        font-weight: 700;
+        font-family: "Poppins", sans-serif;
+    }
+    &__title {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        color: var(--color-white);
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        .box__inner {
+            background-color: #fff;
+        }
+    }
+}

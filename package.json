@@ -1,0 +1,31 @@
+{
+    "name": "scss-starter-pack-for-webdesign",
+    "version": "1.0.3",
+    "main": "index.js",
+    "scripts": {
+        "start": "node-sass --watch scss -o css --source-map true --source-map-embed true --sourceMapContents true",
+        "postcss:autoprefixer": "postcss --use autoprefixer -b 'last 2 versions' --map"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Tajmirul/glint-portfolio.git"
+    },
+    "keywords": [
+        "scss",
+        "starter-pack",
+        "Tajmirul-scss"
+    ],
+    "author": "Tajmirul Islam Akhand",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Tajmirul/glint-portfolio/issues"
+    },
+    "homepage": "https://github.com/Tajmirul/glint-portfolio#readme",
+    "devDependencies": {
+        "node-sass": "^4.14.1"
+    },
+    "description": "",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    }
+}

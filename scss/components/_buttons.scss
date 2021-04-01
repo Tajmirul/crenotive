@@ -1,0 +1,153 @@
+.button {
+    border: none;
+    outline: none;
+
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    position: relative;
+
+    &__icon {
+        padding-right: 1rem;
+        color: var(--color-theme);
+        transition: .3s;
+    }
+
+    &--primary {
+        padding: 1.5rem 1em;
+        color: var(--color-white);
+        background-color: var(--color-black);
+
+        &:hover,
+        &:focus {
+            color: var(--color-black);
+            background-color: #fff;
+        }
+    }
+
+    &--secondary {
+        border-radius: 50px;
+        overflow: hidden;
+        display: flex;
+        position: relative;
+        z-index: 1;
+
+        &__text {
+            color: var(--color-black);
+            background-color: transparent;
+            position: relative;
+            padding: 1rem 2rem;
+            transition: 1s;
+        }
+        
+        .icon {
+            color: var(--color-white);
+            background-color: var(--color-theme);
+            width: 4rem;
+            @include flex-center;
+            position: relative;
+            z-index: 2;
+            transition: .3s;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            background-color: var(--color-black);
+            transition: 0.5s;
+            z-index: -1;
+        }
+
+        &:hover {
+            span {
+                color: var(--color-white);
+            }
+            &::after {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+
+    &--secondary--2 {
+        padding: 1.5rem 2.5rem;
+        background-color: var(--color-black);
+
+        .button--secondary__icon {
+            color: var(--color-theme);
+            margin-right: 1rem;
+        }
+
+        .button--secondary__text {
+            color: var(--color-white);
+            padding: 0;
+        }
+
+        &:hover {
+            background-color: var(--color-theme);
+
+            .button--secondary__icon {
+                color: var(--color-white);
+            }
+        }
+    }
+
+    &--tertiary {
+        padding: 5px 2rem;
+        border-radius: 50px;
+        background-color: var(--color-theme);
+
+        &__icon {
+            color: var(--color-white);
+            position: absolute;
+            right: 2rem;
+            opacity: 0;
+            transition: .3s;
+        }
+        &__text {
+            color: var(--color-white);
+            // background-color: var(--color-theme);
+        }
+
+        &:hover {
+            padding-right: 4rem;
+
+            .button--tertiary__icon {
+                opacity: 1;
+            }
+        }
+    }
+
+    &--tertiary--2 {
+        padding: 5px 2rem;
+        color: var(--color-white);
+        background-color: var(--color-theme);
+        border: 2px solid transparent;
+
+        &:hover, &:focus {
+            color: var(--color-theme);
+            background-color: transparent;
+            border-color: var(--color-theme);
+        }
+    }
+
+    &--link {
+        color: var(--color-black);
+
+        .button__icon {
+            margin-left: 1rem;
+        }
+
+        &:hover {
+            color: var(--color-theme);
+
+            .button__icon {
+                margin-left: 1.5rem;
+            }
+        }
+    }
+}

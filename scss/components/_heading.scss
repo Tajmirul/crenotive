@@ -1,0 +1,103 @@
+.heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+    a {
+        color: inherit;
+
+        &:hover {
+            color: var(--color-theme);
+        }
+    }
+
+    &--light {
+        .heading--section__subTitle, .heading--section__title, .heading--section__text {
+            color: var(--color-white);
+        }
+        .heading--section__subTitle::before, .heading--section__subTitle::after {
+            background-color: #fff;
+        }
+    }
+
+    &--primary {
+        // h1
+
+    }
+
+    &--section {
+        // h2
+        max-width: 48rem;
+
+        &.heading--section--full {
+            max-width: 100%;
+        }
+
+        &__subTitle {
+            color: var(--color-theme);
+            font-size: 1.6rem;
+            position: relative;
+            margin-bottom: 1rem;
+            display: inline-block;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 130%;
+                height: 3px;
+                width: 5rem;
+                transform: translateY(-50%);
+                background-color: var(--color-theme);
+                display: none;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 130%;
+                height: 3px;
+                width: 5rem;
+                transform: translateY(-50%);
+                background-color: var(--color-theme);
+            }
+        }
+
+        &__title {
+            display: block;
+            font-size: 32px;
+            line-height: 34px;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+            line-height: 24px;
+            margin-top: 2rem;
+        }
+
+        &.heading--center {
+            text-align: center;
+            margin: auto;
+
+            .heading--section__subTitle::before {
+                display: block;
+            }
+        }
+    }
+
+    &--secondary {
+        // h3
+        font-size: 18px;
+    }
+
+    &--tertiary {
+        // h4
+        font-size: 2.2rem;
+    }
+
+    &--tertiary--2 {
+        // h5
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}

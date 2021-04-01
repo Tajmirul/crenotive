@@ -1,0 +1,156 @@
+.nav-bar {
+    background-color: var(--bs-white);
+
+    .logo {
+        margin: 0 1rem;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            color: var(--bs-light);
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        &__image {
+            max-width: 15rem;
+        }
+    }
+
+    &--top {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 3px 0;
+
+        &__icon {
+            font-size: 1rem;
+            margin-right: 8px;
+            color: var(--color-theme);
+        }
+
+        &__item {
+            display: flex;
+            font-size: 1.2rem;
+            align-items: center;
+            color: var(--bs-dark);
+            margin-right: 2rem;
+
+            &:hover {
+                color: var(--color-theme);
+            }
+        }
+    }
+
+    &--desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo {
+            background-color: var(--color-dark);
+
+            a {
+                padding: 1rem 3rem;
+            }
+        }
+
+        ul {
+            li {
+                display: inline-block;
+            }
+
+            a {
+                display: block;
+                font-size: 1.6rem;
+                color: var(--bs-dark);
+                padding: 2rem 1rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-family: "Poppins", sans-serif;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 10px;
+                    right: 0;
+                    width: 0;
+                    height: 2px;
+                    background-color: var(--color-theme);
+                    transition: 0.2s;
+                }
+
+                &:hover::after {
+                    left: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &--mobile {
+        padding: 1.5rem 0;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+                display: inline-block;
+            }
+        }
+
+        .hamburger-menu-icon {
+            border: none;
+            outline: none;
+            background-color: transparent;
+            font-size: 2rem;
+            position: relative;
+            z-index: 3;
+            border-radius: 50%;
+            height: 4rem;
+            width: 4rem;
+            background-color: #fff;
+            @include flex-center;
+        }
+    }
+}
+
+.mobile-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    // width: 95%;
+    width: 0;
+    overflow-x: hidden;
+    max-width: 30rem;
+    background-color: #fff;
+    z-index: 2;
+    transition: .3s;
+
+    .logo {
+        img {
+            max-width: 18rem;
+            margin: auto;
+        }
+    }
+
+    ul {
+        li {
+            a {
+                color: var(--color-dark);
+                font-size: 1.6rem;
+                display: block;
+                padding: 6px 2rem;
+                font-weight: 500;
+                font-family: "Poppins", sans-serif;
+                text-align: center;
+
+                &:hover {
+                    color: var(--color-theme);
+                }
+            }
+        }
+    }
+}

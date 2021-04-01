@@ -1,0 +1,130 @@
+.cart-slider {
+    .cart {
+        margin-left: calc(var(--bs-gutter-x) / 2);
+        margin-right: calc(var(--bs-gutter-x) / 2);
+        margin-top: var(--bs-gutter-y);
+    }
+}
+
+.cart {
+    position: relative;
+    padding: 2rem;
+    padding-bottom: 3rem;
+    background-color: var(--color-white);
+    transition: 0.4s;
+
+    &__icon {
+        padding: 1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--color-white);
+        width: 7rem;
+        height: 7rem;
+        z-index: 2;
+        @include flex-center;
+        transition: .5s;
+    }
+
+    &__image {
+        position: relative;
+        margin-bottom: 0;
+
+        img {
+            width: 100%;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(43, 43, 43, 0.755);
+            opacity: .5;
+            transition: .5s;
+            height: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(43, 43, 43, 0.755);
+            opacity: .5;
+            transition: .5s;
+            height: 0;
+        }
+    }
+
+    &__meta {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        color: #797979;
+
+        &--icon {
+            margin-right: .5rem;
+            color: var(--color-theme);
+        }
+    }
+    &__author {}
+
+    &__date {
+
+    }
+
+    &--text-center {
+        text-align: center;
+    }
+
+    &__heading {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    &__details {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    &__button {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    &.after {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background-color: var(--color-theme);
+        }
+    }
+
+    &:hover {
+        // transform: translateY(-1rem);
+
+        .cart__image {
+            &::before {
+                bottom: 0;
+                height: 100%;
+            }
+            &::after {
+                top: 0;
+                height: 100%;
+            }
+        }
+
+        .cart__icon {
+            left: 50%;
+        }
+    }
+}

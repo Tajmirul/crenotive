@@ -1,0 +1,51 @@
+.user-profile {
+    text-align: center;
+    background-color: var(--color-white);
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    transition: .3s;
+
+    &__image {
+        border-radius: 50%;
+        width: 10rem;
+        height: 10rem;
+        margin-bottom: 1rem;
+        position: relative;
+        margin: auto;
+        margin-bottom: 2rem;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    &__social-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        // transform: translate(50%, -50%);
+        height: 3rem;
+        width: 3rem;
+        @include flex-center;
+        background-color: var(--color-theme);
+        color: var(--color-white) !important;
+        font-size: 1.4rem;
+        border-radius: 50%;
+    }
+
+    &__name {
+
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &:hover {
+        background-color: var(--color-black);
+
+        .user-profile__name, .user-profile__title {
+            color: var(--color-white)
+        }
+    }
+}

@@ -1,0 +1,38 @@
+footer.footer-section {
+    // text-align: center;
+}
+
+.footer-logo {
+    max-width: 30rem;
+}
+
+.footer-text {
+    color: #dadada;
+    font-size: 1.4rem;
+}
+.footer-list {
+    &__item {
+        display: flex;
+        margin-bottom: 8px;
+    }
+
+    &__icon {
+        font-size: 1.6rem;
+        margin-right: 1rem;
+        color: var(--color-theme);
+    }
+
+    a {
+        color: inherit;
+    }
+}
+
+.copyright {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #000;
+    color: #dadada;
+    position: relative;
+    z-index: 1;
+}
