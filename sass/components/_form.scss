@@ -1,4 +1,8 @@
 .subscribe-form {
+    $subscribe-form: &;
+    width: 100%;
+    max-width: 42rem;
+
     position: relative;
 
     &__input {

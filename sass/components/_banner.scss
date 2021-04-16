@@ -2,14 +2,14 @@
     position: relative;
 
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
         height: 10%;
         color: var(--color-white);
-        background-image: url('../img/shape.svg');
+        background-image: url("../img/shape.svg");
     }
 }
 .banner {
@@ -23,7 +23,6 @@
     &__text {
         font-size: 1.6rem;
         color: var(--bs-white);
-        // font-weight: 600;
         letter-spacing: 2px;
         padding: 1rem 0;
     }
@@ -33,6 +32,24 @@
         top: 42%;
         transform: translateY(-50%);
         max-width: 65rem;
+    }
+
+    &--half {
+        height: 30rem;
+    }
+
+    &--search-area {
+        position: relative;
+        height: 100%;
+
+        &__inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            max-width: 42rem;
+        }
     }
 }
 
@@ -63,7 +80,7 @@
         position: relative;
 
         &::after {
-            content: '';
+            content: "";
             position: absolute;
             bottom: 100%;
             left: 0;

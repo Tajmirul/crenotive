@@ -9,7 +9,8 @@
 .cart {
     position: relative;
     padding: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 0;
+    margin-bottom: 3rem;
     background-color: var(--color-white);
     transition: 0.4s;
 
@@ -24,7 +25,7 @@
         height: 7rem;
         z-index: 2;
         @include flex-center;
-        transition: .5s;
+        transition: 0.5s;
     }
 
     &__image {
@@ -36,45 +37,49 @@
         }
 
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             background-color: rgba(43, 43, 43, 0.755);
-            opacity: .5;
-            transition: .5s;
+            opacity: 0.5;
+            transition: 0.5s;
             height: 0;
         }
 
         &::after {
-            content: '';
+            content: "";
             position: absolute;
             left: 0;
             right: 0;
             bottom: 0;
             background-color: rgba(43, 43, 43, 0.755);
-            opacity: .5;
-            transition: .5s;
+            opacity: 0.5;
+            transition: 0.5s;
             height: 0;
         }
     }
 
     &__meta {
-        margin-top: 1rem;
         font-size: 1.4rem;
         color: #797979;
+        display: flex;
+        align-items: center;
+
+        &--item {
+            margin-right: 1rem;
+        }
 
         &--icon {
-            margin-right: .5rem;
+            margin-right: 0.5rem;
             color: var(--color-theme);
         }
     }
+
     &__author {}
 
-    &__date {
-
-    }
+    &__date {}
 
     &--text-center {
         text-align: center;
@@ -95,6 +100,42 @@
         margin-bottom: 0;
     }
 
+    &__content {
+        position: relative;
+        bottom: 0;
+        transform: translateY(-50%);
+        margin: auto;
+
+        width: calc(100% - 3rem);
+        background-color: var(--color-white);
+        padding: 15px;
+        border-radius: 5px;
+        z-index: 3;
+    }
+
+    &--primary {
+        &:hover {
+            .cart__image {
+                &::before {
+                    bottom: 0;
+                    height: 100%;
+                }
+                &::after {
+                    top: 0;
+                    height: 100%;
+                }
+            }
+
+            .cart__icon {
+                left: 50%;
+            }
+        }
+    }
+
+    &--secondary {
+
+    }
+
     &.after {
         position: relative;
 
@@ -106,25 +147,6 @@
             right: 0;
             height: 5px;
             background-color: var(--color-theme);
-        }
-    }
-
-    &:hover {
-        // transform: translateY(-1rem);
-
-        .cart__image {
-            &::before {
-                bottom: 0;
-                height: 100%;
-            }
-            &::after {
-                top: 0;
-                height: 100%;
-            }
-        }
-
-        .cart__icon {
-            left: 50%;
         }
     }
 }
