@@ -76,6 +76,7 @@
     &--secondary--2 {
         padding: 1.5rem 2.5rem;
         background-color: var(--color-black);
+        color: #fff;
 
         .button--secondary__icon {
             color: var(--color-theme);
@@ -149,5 +150,11 @@
                 margin-left: 1.5rem;
             }
         }
+    }
+
+    &--small {
+        font-size: 1.2rem !important;
+        border-width: 1px;
+        font-weight: 600;
     }
 }

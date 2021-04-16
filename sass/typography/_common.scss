@@ -67,15 +67,25 @@ input:not(.not-default),
 select:not(.not-default),
 textarea:not(.not-default) {
     padding: 1.4rem 2rem;
-    border: 1px solid #6d6d6d;
+    border: 1px solid #6d6d6d63;
     font-size: 1.6rem;
-    background-color: rgba(112, 114, 116, 0.25);
-    color: var(--color-white);
+    background-color: #fff;
+    color: var(--bs-dark);
     width: 100%;
     transition: 0.3s;
 
     &::placeholder {
+        color: var(--color-dark);
+    }
+
+    &.transparent {
+        border: 1px solid #6d6d6d;
+        background-color: rgba(112, 114, 116, 0.25);
         color: var(--color-white);
+
+        &::placeholder {
+            color: var(--bs-light);
+        }
     }
 
     &:focus {
@@ -92,7 +102,7 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-input[type="number"] {
+input[type=number] {
     -moz-appearance: textfield;
 }
 
@@ -105,4 +115,18 @@ input[type="number"] {
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.7);
     display: none;
+}
+
+.bottom-after {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 5rem;
+        height: 3px;
+        background-color: var(--color-theme);
+    }
 }

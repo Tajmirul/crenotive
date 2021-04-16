@@ -1,0 +1,37 @@
+.side-bar {
+    --border: 1px solid #1d1d1d2a;
+
+    &__link-list {}
+
+    &__link-item {}
+
+    &__link {
+        padding: 1.2rem .5rem;
+        border-bottom: var(--border);
+        font-size: 1.4rem;
+        color: var(--bs-dark);
+        display: block;
+
+        &-left-icon {
+            margin-right: 8px;
+        }
+
+        &-text {
+
+        }
+
+        &-number {
+            float: right;
+            width: 2.5rem;
+            height: 2.5rem;
+            @include flex-center;
+            font-size: 1.2rem;
+            background-color: rgb(225, 225, 225);
+            color: var(--bs-dark) !important;
+        }
+
+        &:hover {
+            color: var(--color-theme);
+        }
+    }
+}

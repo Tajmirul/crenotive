@@ -10,9 +10,13 @@
     position: relative;
     padding: 2rem;
     padding-bottom: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
     background-color: var(--color-white);
     transition: 0.4s;
+
+    &--no-padding {
+        padding: 0;
+    }
 
     &__icon {
         padding: 1rem;
@@ -66,6 +70,7 @@
         color: #797979;
         display: flex;
         align-items: center;
+        padding: 3px 0;
 
         &--item {
             margin-right: 1rem;
@@ -98,22 +103,35 @@
     &__button {
         margin-top: 1rem;
         margin-bottom: 0;
+
+        &--2 {
+            display: none;
+            transition: none;
+        }
     }
 
     &__content {
-        position: relative;
+        position: absolute;
         bottom: 0;
-        transform: translateY(-50%);
-        margin: auto;
+        left: 1.5rem;
+        height: 108px;
+        transform: translateY(50%);
+
+        // position: relative;
+        // bottom: 0;
+        // transform: translateY();
+        // margin: auto;
 
         width: calc(100% - 3rem);
-        background-color: var(--color-white);
+        background-color: #ededed;
         padding: 15px;
         border-radius: 5px;
         z-index: 3;
     }
 
     &--primary {
+        padding-bottom: 2rem;
+        
         &:hover {
             .cart__image {
                 &::before {

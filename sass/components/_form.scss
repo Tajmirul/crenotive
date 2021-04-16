@@ -25,4 +25,14 @@
         background-color: var(--color-theme);
         color: var(--color-white);
     }
+
+    &.side-bar__search-form {
+        #{$subscribe-form}__input {
+            border: 1px solid rgba(189, 189, 189, 0.467);
+
+            &:focus {
+                border-color: var(--color-theme);
+            }
+        }
+    }
 }

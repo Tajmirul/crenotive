@@ -123,5 +123,11 @@ $(document).ready(function () {
     //         $(this).parent().find('>ul').slideToggle()
     //     });
 
-
+    $('.cart__content').hover(function() {
+        $(this).find('.cart__meta').stop().slideUp(200)
+        $(this).find('.cart__button--2').stop().slideDown(200)
+    }, function() {
+        $(this).find('.cart__meta').stop().slideDown(200)
+        $(this).find('.cart__button--2').stop().slideUp(200)
+    })
 });
