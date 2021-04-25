@@ -136,3 +136,10 @@ input[type=number] {
     font-size: inherit;
 }
 
+.list-style {
+    padding-left: 2rem;
+
+    li {
+        list-style: disc;
+    }
+}
