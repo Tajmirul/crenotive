@@ -20,9 +20,6 @@ $(document).ready(function () {
     //         event.preventDefault();
     //     });
 
-    // WOW active
-    //     new WOW().init();
-
     // slick slider for banner 
     $('.cart-slider').slick({
         arrows: false,
@@ -53,30 +50,25 @@ $(document).ready(function () {
     $.each($('[data-bg-img]'), (index, item) => {
         $(item).css('background-image', 'url(' + $(item).data('bgImg') + ')')
     })
-    // preloader
-    //     $(".preloader").animate({
-    //         top: -2000000
-    //     }, 1500);
 
     // sticky menu ber and go to top button
-    //     $(window).scroll(function () {
-    //         var scrolled = $(window).scrollTop();
-    //         var topMain = $('main').offset().top - 400;
+    $(window).scroll(function () {
+        var scrolled = $(window).scrollTop();
+        var topOffset = $('.nav-bar--top').height() + 10;
 
-    // go to top button
-    //         if (scrolled > topMain) {
-    //             $('.go-to-top').addClass('active');
-    //             $('.nav-outer').addClass('sticky');
-
-    //             $('.go-to-top').click(function () {
-    //                 $(window).scrollTop(0);
-    //             });
-    //         } else {
-    //             $('.go-to-top').removeClass('active');
-    //             $('.nav-outer').removeClass('sticky')
-    //         }
-    // console.log(scrolled);
-    //     });
+        if (scrolled > topOffset) {
+            $('.go-to-top').addClass('active');
+            $('.nav-bar--bottom').addClass('sticky');
+            $('main').css('margin-top', $('.nav-bar--bottom').height())
+        } else {
+            $('.go-to-top').removeClass('active');
+            $('.nav-bar--bottom').removeClass('sticky')
+            $('main').css('margin-top', '0')
+        }
+    });
+    $('.go-to-top').click(function () {
+        $(window).scrollTop(0);
+    });
 
     // menu bar open -------------------------
     $('.nav-bar--mobile .hamburger-menu-icon').click(function () {
@@ -123,11 +115,18 @@ $(document).ready(function () {
     //         $(this).parent().find('>ul').slideToggle()
     //     });
 
-    $('.cart__content').hover(function() {
+    $('.cart__content').hover(function () {
         $(this).find('.cart__meta').stop().slideUp(200)
         $(this).find('.cart__button--2').stop().slideDown(200)
-    }, function() {
+    }, function () {
         $(this).find('.cart__meta').stop().slideDown(200)
         $(this).find('.cart__button--2').stop().slideUp(200)
-    })
+    });
+
+    $('.preloader').fadeOut(200);
+
+    // WOW active
+    new WOW({
+        offset: 100,
+    }).init();
 });

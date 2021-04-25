@@ -39,7 +39,7 @@
 
     <!-- ALL CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -47,9 +47,20 @@
 </head>
 
 <body>
-    <!-- <div class="go-to-top"><i class="icofont-rounded-up"></i></div> -->
+    <div class="go-to-top"><i class="fas fa-long-arrow-alt-up"></i></div>
     <!-- go to top button -->
-    <!-- <div class="preloader"><div class="preloader-inner"></div></div> -->
+    <div class="preloader">
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            style="margin: auto; background: rgb(255, 255, 255); display: block; shape-rendering: auto;" width="200px"
+            height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+            <circle cx="50" cy="50" r="32" stroke-width="8" stroke="#ff0000"
+                stroke-dasharray="50.26548245743669 50.26548245743669" fill="none" stroke-linecap="round">
+                <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s"
+                    keyTimes="0;1" values="0 50 50;360 50 50"></animateTransform>
+            </circle>
+        </svg>
+    </div>
     <!-- /.preloader -->
 
     <header id="home">
@@ -146,12 +157,15 @@
                         <div class="container h-100 overflow-hidden">
                             <div class="banner__contents">
                                 <div>
-                                    <h1 class="heading banner__heading">Prosper in this volatile market funding.</h1>
-                                    <p class="my-4 banner__text">We place you at the centre of international networks to
-                                        advance your
-                                        interests. </p>
-                                    <a href="#services" class="button button--primary"><i
-                                            class="button__icon fas fa-cog"></i> View Our Services</a>
+                                    <h1 class="heading banner__heading wow animate__animated animate__fadeInUp">Prosper
+                                        in this volatile market funding.</h1>
+                                    <p class="my-4 banner__text wow animate__animated animate__fadeInUp"
+                                        data-wow-delay=".2s">We place you at the centre of international networks to
+                                        advance your interests. </p>
+                                    <a href="#services"
+                                        class="button button--primary wow animate__animated animate__fadeInUp"
+                                        data-wow-delay=".3s"><i class="button__icon fas fa-cog"></i> View Our
+                                        Services</a>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +181,7 @@
                 <div class="container overflow-hidden">
                     <div class="banner-services__inner px-md-5">
                         <div class="row g-0">
-                            <div class="col-md-4">
+                            <div class="col-md-4 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                                 <div class="banner-services__item">
                                     <img src="img/icons/h14-icon1.png" class="banner-services__icon"
                                         alt="Name of service">
@@ -184,7 +198,7 @@
                                 </div>
                                 <!-- /.banner services item -->
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                                 <div class="banner-services__item">
                                     <img src="img/icons/h14-icon2.png" class="banner-services__icon"
                                         alt="Name of service">
@@ -201,7 +215,7 @@
                                 </div>
                                 <!-- /.banner services item -->
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
                                 <div class="banner-services__item">
                                     <img src="img/icons/h14-icon3.png" class="banner-services__icon"
                                         alt="Name of service">
@@ -229,7 +243,7 @@
 
             <div class="container overflow-hidden position-relative" style="z-index: 1;">
                 <div class="row g-5">
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow animate__animated animate__fadeInLeft">
                         <div class="about-image">
                             <div class="about-image__img">
                                 <img src="img/about-us.webp" alt="Image alter" class="w-100">
@@ -252,7 +266,7 @@
                     </div>
                     <!-- /.image -->
 
-                    <div class="col-md-6 about-us">
+                    <div class="col-md-6 wow animate__animated animate__fadeInRight about-us">
                         <h2 class="heading heading--section mb-5">
                             <span class="heading--section__subTitle">About us</span>
                             <span class="heading--section__title">We are dedicated to support you</span>
@@ -294,7 +308,7 @@
                 </h2>
 
                 <div class="row gx-70 mt-5 cart-slider">
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__animated animate__slideInLeft">
                         <div class="cart cart--primary after">
                             <div class="cart__image">
                                 <div class="cart__icon">
@@ -302,7 +316,8 @@
                                 </div>
                                 <img src="img/cart-image/theme-05-600x315.webp" alt="image alter">
                             </div>
-                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market Research and
+                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market
+                                    Research and
                                     Advertising</a></div>
                             <p class="cart__details fz-normal line-height">This is one of many areas of business
                                 professional services where our firm is well ahead of the competition.</p>
@@ -311,7 +326,7 @@
                         </div>
                     </div>
                     <!-- /.cart column -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__animated animate__slideInUp">
                         <div class="cart cart--primary after">
                             <div class="cart__image">
                                 <div class="cart__icon">
@@ -319,7 +334,8 @@
                                 </div>
                                 <img src="img/cart-image/theme-09-600x315.webp" alt="image alter">
                             </div>
-                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market Research and
+                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market
+                                    Research and
                                     Advertising</a></div>
                             <p class="cart__details fz-normal line-height">This is one of many areas of business
                                 professional services where our firm is well ahead of the competition.</p>
@@ -328,7 +344,7 @@
                         </div>
                     </div>
                     <!-- /.cart column -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__animated animate__slideInRight">
                         <div class="cart cart--primary after">
                             <div class="cart__image">
                                 <div class="cart__icon">
@@ -336,7 +352,8 @@
                                 </div>
                                 <img src="img/cart-image/theme-10-600x315.webp" alt="image alter">
                             </div>
-                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market Research and
+                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market
+                                    Research and
                                     Advertising</a></div>
                             <p class="cart__details fz-normal line-height">This is one of many areas of business
                                 professional services where our firm is well ahead of the competition.</p>
@@ -345,7 +362,7 @@
                         </div>
                     </div>
                     <!-- /.cart column -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__animated animate__slideInRight">
                         <div class="cart cart--primary after">
                             <div class="cart__image">
                                 <div class="cart__icon">
@@ -353,7 +370,8 @@
                                 </div>
                                 <img src="img/cart-image/theme-12-600x315.webp" alt="image alter">
                             </div>
-                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market Research and
+                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market
+                                    Research and
                                     Advertising</a></div>
                             <p class="cart__details fz-normal line-height">This is one of many areas of business
                                 professional services where our firm is well ahead of the competition.</p>
@@ -372,7 +390,7 @@
 
             <div class="container overflow-hidden position-relative" style="z-index: 1;">
                 <div class="box-layout">
-                    <div class="box">
+                    <div class="box wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                         <div class="box__inner">
                             <i class="fas fa-person-carry box__icon"></i>
                             <p class="box__number">100</p>
@@ -380,7 +398,7 @@
                         <h5 class="box__title">Completed <br> Projects</h5>
                     </div>
                     <!-- /.box -->
-                    <div class="box">
+                    <div class="box wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
                         <div class="box__inner">
                             <i class="fas fa-people-arrows box__icon"></i>
                             <p class="box__number">60</p>
@@ -388,7 +406,7 @@
                         <h5 class="box__title">Satisfied <br> Clients</h5>
                     </div>
                     <!-- /.box -->
-                    <div class="box">
+                    <div class="box wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                         <div class="box__inner">
                             <i class="fas fa-cogs box__icon"></i>
                             <p class="box__number">14</p>
@@ -396,7 +414,7 @@
                         <h5 class="box__title">Team <br> Members</h5>
                     </div>
                     <!-- /.box -->
-                    <div class="box">
+                    <div class="box wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
                         <div class="box__inner">
                             <i class="fas fa-gem box__icon"></i>
                             <p class="box__number">25</p>
@@ -421,12 +439,13 @@
                 </h2>
 
                 <div class="row mt-5 cart-slider">
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__animated animate__fadeInLeft">
                         <div class="cart cart--primary cart--text-center">
                             <div class="cart__image">
                                 <img src="img/cart-image/theme-05-600x315.webp" alt="image alter">
                             </div>
-                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market Research and
+                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market
+                                    Research and
                                     Advertising</a></div>
                             <p class="cart__details fz-normal line-height">This is one of many areas of business
                                 professional services where our firm is well ahead of the competition.</p>
@@ -439,12 +458,13 @@
                         </div>
                     </div>
                     <!-- /.cart column -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__animated animate__fadeInUp">
                         <div class="cart cart--primary cart--text-center">
                             <div class="cart__image">
                                 <img src="img/cart-image/theme-09-600x315.webp" alt="image alter">
                             </div>
-                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market Research and
+                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market
+                                    Research and
                                     Advertising</a></div>
                             <p class="cart__details fz-normal line-height">This is one of many areas of business
                                 professional services where our firm is well ahead of the competition.</p>
@@ -457,12 +477,13 @@
                         </div>
                     </div>
                     <!-- /.cart column -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__animated animate__fadeInRight">
                         <div class="cart cart--primary cart--text-center">
                             <div class="cart__image">
                                 <img src="img/cart-image/theme-10-600x315.webp" alt="image alter">
                             </div>
-                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market Research and
+                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market
+                                    Research and
                                     Advertising</a></div>
                             <p class="cart__details fz-normal line-height">This is one of many areas of business
                                 professional services where our firm is well ahead of the competition.</p>
@@ -475,12 +496,13 @@
                         </div>
                     </div>
                     <!-- /.cart column -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__animated animate__fadeInRight">
                         <div class="cart cart--primary cart--text-center">
                             <div class="cart__image">
                                 <img src="img/cart-image/theme-12-600x315.webp" alt="image alter">
                             </div>
-                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market Research and
+                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market
+                                    Research and
                                     Advertising</a></div>
                             <p class="cart__details fz-normal line-height">This is one of many areas of business
                                 professional services where our firm is well ahead of the competition.</p>
@@ -650,7 +672,7 @@
                 <!-- /.heading row -->
 
                 <div class="row gx-5 mt-5 cart-slider">
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__animated animate__fadeInRight">
                         <div class="cart cart--primary after">
                             <div class="cart__image">
                                 <img src="img/cart-image/theme-05-600x315.webp" alt="image alter">
@@ -670,7 +692,7 @@
                         </div>
                     </div>
                     <!-- /.blog column -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__animated animate__fadeInRight">
                         <div class="cart cart--primary after">
                             <div class="cart__image">
                                 <img src="img/cart-image/theme-05-600x315.webp" alt="image alter">
@@ -680,7 +702,8 @@
                                     Nov, 2021</span>
                                 <span class="cart__author"><i class="cart__meta--icon fas fa-user"></i> Admin</span>
                             </div>
-                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market Research and
+                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market
+                                    Research and
                                     Advertising</a></div>
                             <p class="cart__details fz-normal line-height">This is one of many areas of business
                                 professional services where our firm is well ahead of the competition.</p>
@@ -689,7 +712,7 @@
                         </div>
                     </div>
                     <!-- /.blog column -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__animated animate__fadeInRight">
                         <div class="cart cart--primary after">
                             <div class="cart__image">
                                 <img src="img/cart-image/theme-05-600x315.webp" alt="image alter">
@@ -699,7 +722,8 @@
                                     Nov, 2021</span>
                                 <span class="cart__author"><i class="cart__meta--icon fas fa-user"></i> Admin</span>
                             </div>
-                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market Research and
+                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market
+                                    Research and
                                     Advertising</a></div>
                             <p class="cart__details fz-normal line-height">This is one of many areas of business
                                 professional services where our firm is well ahead of the competition.</p>
@@ -708,7 +732,7 @@
                         </div>
                     </div>
                     <!-- /.blog column -->
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__animated animate__fadeInRight">
                         <div class="cart cart--primary after">
                             <div class="cart__image">
                                 <img src="img/cart-image/theme-05-600x315.webp" alt="image alter">
@@ -718,7 +742,8 @@
                                     Nov, 2021</span>
                                 <span class="cart__author"><i class="cart__meta--icon fas fa-user"></i> Admin</span>
                             </div>
-                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market Research and
+                            <div class="heading heading--tertiary cart__heading"><a href="/blog-details.html">Market
+                                    Research and
                                     Advertising</a></div>
                             <p class="cart__details fz-normal line-height">This is one of many areas of business
                                 professional services where our firm is well ahead of the competition.</p>
@@ -753,7 +778,7 @@
 
                 <div class="row g-5 mt-5">
                     <div class="col-md-5">
-                        <div class="contact-info contact-info__item">
+                        <div class="contact-info contact-info__item wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                             <div class="contact-info__icon"><i class="fas fa-map-marker-alt"></i></div>
                             <div class="contact-info__content">
                                 <h5 class="contact-info__heading heading heading--tertiary--2">Our head office address:
@@ -763,7 +788,7 @@
                             </div>
                         </div>
                         <!-- /.contact-info item -->
-                        <div class="contact-info contact-info__item">
+                        <div class="contact-info contact-info__item wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
                             <div class="contact-info__icon"><i class="fas fa-phone-alt"></i></div>
                             <div class="contact-info__content">
                                 <h5 class="contact-info__heading heading heading--tertiary--2">Call for help:</h5>
@@ -774,7 +799,7 @@
                             </div>
                         </div>
                         <!-- /.contact-info item -->
-                        <div class="contact-info contact-info__item">
+                        <div class="contact-info contact-info__item wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                             <div class="contact-info__icon"><i class="fas fa-envelope-open"></i></div>
                             <div class="contact-info__content">
                                 <h5 class="contact-info__heading heading heading--tertiary--2">Mail us for information
@@ -790,22 +815,22 @@
                     <div class="col-md-6 offset-md-1">
                         <form action="/" method="POST">
                             <div class="row g-4">
-                                <div class="col-12">
+                                <div class="col-12 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                                     <input type="text" name="name" class="transparent" placeholder="Your Name *"
                                         required>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
                                     <input type="email" name="email" class="transparent" placeholder="Your Email *"
                                         required>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                                     <input type="number" name="phone" class="transparent" placeholder="Phone Number">
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
                                     <textarea name="message" class="transparent" placeholder="Write Your Message ..."
                                         required></textarea>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
                                     <button type="submit" class="button button--primary contact-button">
                                         <span class="button__icon"><i class="fas fa-share-square"></i></span>
                                         Send Message
@@ -818,7 +843,7 @@
                 </div>
             </div>
         </section>
-        <div class="google-map">
+        <div class="google-map wow animate__animated animate__fadeIn">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29163.09792569972!2d90.71559825156343!3d23.982099002516545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37542bf67d183151%3A0xf779237115bdbea2!2sShibpur%20Upazila!5e0!3m2!1sen!2sbd!4v1617277392974!5m2!1sen!2sbd"
                 style="width: 100%; height: 100%;" loading="lazy"></iframe>

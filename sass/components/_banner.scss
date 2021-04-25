@@ -32,6 +32,7 @@
         top: 42%;
         transform: translateY(-50%);
         max-width: 65rem;
+        width: calc(100% - 42%);
     }
 
     &--half {

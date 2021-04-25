@@ -175,13 +175,25 @@ label {
 .gx-70 {
   --bs-gutter-x: 7rem !important; }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4; }
+
 .go-to-top {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  background-color: #004e00;
+  background-color: var(--color-theme);
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -192,7 +204,8 @@ label {
   justify-content: center;
   transform: translateY(2rem);
   visibility: hidden;
-  opacity: 0; }
+  opacity: 0;
+  z-index: 2; }
   .go-to-top.active {
     transform: translateY(0rem);
     visibility: visible;
@@ -659,7 +672,8 @@ section, footer.footer-section {
   position: absolute;
   top: 42%;
   transform: translateY(-50%);
-  max-width: 65rem; }
+  max-width: 65rem;
+  width: calc(100% - 42%); }
 
 .banner--half {
   height: 30rem; }
@@ -786,6 +800,14 @@ section, footer.footer-section {
       display: flex;
       align-items: center;
       justify-content: center; }
+  .nav-bar--bottom.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
 
 .mobile-navigation {
   position: fixed;
