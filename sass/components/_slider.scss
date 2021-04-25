@@ -4,7 +4,7 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
-    
+
     &--banner &__item {
         height: 70rem;
     }
@@ -31,4 +31,43 @@
             }
         }
     }
+}
+
+// slider
+.arrows {
+    z-index: 1;
+    background: var(--color-theme);
+    color: var(--color-white);
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    cursor: pointer;
+    
+    &--small {
+        font-size: 16px;
+        height: 3rem;
+        width: 3rem;
+    }
+    
+    &:not(.appended) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+
+        &.prev {
+            left: 3px;
+        }
+        &.next {
+            right: 2px;
+        }
+    }
+}
+
+.append-arrows {
+    display: flex;
+
 }

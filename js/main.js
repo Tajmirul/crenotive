@@ -46,6 +46,45 @@ $(document).ready(function () {
         ]
     });
 
+    $('.local-client').slick({
+        arrows: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: false,
+        prevArrow: '<i class="arrows arrows--small prev appended fal fa-arrow-left me-3"></i>',
+        nextArrow: '<i class="arrows arrows--small prev appended fal fa-arrow-right"></i>',
+        appendArrows: $('.append-arrows--local-client'),
+        responsive: [
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    })
+
+    $('.international-client').slick({
+        arrows: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: false,
+        loop: false,
+        prevArrow: '<i class="arrows arrows--small prev appended fal fa-arrow-left me-3"></i>',
+        nextArrow: '<i class="arrows arrows--small prev appended fal fa-arrow-right"></i>',
+        appendArrows: $('.append-arrows--international-client'),
+        responsive: [
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    })
+
     // my code ----------------------------------------------------------------------
     $.each($('[data-bg-img]'), (index, item) => {
         $(item).css('background-image', 'url(' + $(item).data('bgImg') + ')')

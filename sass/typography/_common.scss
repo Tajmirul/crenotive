@@ -50,31 +50,6 @@
     background: rgba(0, 0, 0, 0.3);
 }
 
-// slider
-.arrows {
-    z-index: 1;
-    background: var(--color-theme);
-    border-radius: 50%;
-    color: var(--color-white);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 4rem;
-    width: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    cursor: pointer;
-
-    &.prev {
-        left: 3px;
-    }
-    &.next {
-        right: 2px;
-    }
-}
-
 input:not(.not-default),
 select:not(.not-default),
 textarea:not(.not-default) {
@@ -154,4 +129,10 @@ input[type=number] {
     li {
         list-style: disc;
     }
+}
+
+.row div[class^="col-"] {
+    padding-right: calc(var(--bs-gutter-x)/ 2);
+    padding-left: calc(var(--bs-gutter-x)/ 2);
+    margin-top: var(--bs-gutter-y);
 }
