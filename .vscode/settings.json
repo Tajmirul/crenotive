@@ -3,8 +3,9 @@
     "ponicode.testSettings.testLocation.path": "{rootDir}/{filePath}/{fileName}.test.{ext}",
     "cSpell.words": [
         "Crenotive",
+        "Crinotive",
+        "donderry",
         "Fratton",
-        "Lono",
-        "donderry"
+        "Lono"
     ]
 }
